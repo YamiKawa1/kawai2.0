@@ -7,8 +7,8 @@ import { AuthService } from './auth/auth.service';
 import { ConfigModule } from '@nestjs/config';
 
 @Module({
-  imports: [ConfigModule.forRoot()],
-  controllers: [AppController, StoreController, AuthController],
-  providers: [AppService, AuthService],
+    imports: [ConfigModule.forRoot()],
+    controllers: [AppController, StoreController, AuthController],
+    providers: [AppService, AuthService],
 })
 export class AppModule {}
